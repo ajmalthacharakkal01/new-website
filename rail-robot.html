@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Robot Project - Documentation</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .project-documentation {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .project-section {
+            margin-bottom: 2rem;
+        }
+        .project-section h2 {
+            color: #1f4037;
+            margin-bottom: 1rem;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .project-image img {
+            width: 100%;
+            height: auto;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .tech-item {
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 0.8rem 1.5rem;
+            background: #1f4037;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #2a5298;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-documentation">
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+        
+        <div class="project-header">
+            <h1>Rail Robot for Track Inspection</h1>
+            <p>An automated robot designed for railway track inspection using advanced sensors and real-time monitoring</p>
+        </div>
+
+        <div class="project-content">
+            <div class="project-section">
+                <h2>Project Overview</h2>
+                <p>The Rail Robot is an autonomous system designed to inspect railway tracks for defects and irregularities. Using a Raspberry Pi 4B+ as its brain, the robot can move along tracks while collecting and analyzing data in real-time.</p>
+            </div>
+
+            <div class="project-section">
+                <h2>Technical Details</h2>
+                <div class="tech-stack">
+                    <span class="tech-item">Raspberry Pi 4B+</span>
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">OpenCV</span>
+                    <span class="tech-item">Motor Control</span>
+                    <span class="tech-item">Sensors</span>
+                </div>
+                <p>The system incorporates:</p>
+                <ul>
+                    <li>Raspberry Pi 4B+ for central processing</li>
+                    <li>HD webcam for visual inspection</li>
+                    <li>DC motors with driver IC for movement</li>
+                    <li>Custom-designed chassis for stability</li>
+                    <li>Real-time data processing capabilities</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Autonomous track navigation</li>
+                    <li>Real-time defect detection</li>
+                    <li>Image processing for crack detection</li>
+                    <li>Wireless data transmission</li>
+                    <li>Battery monitoring system</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Implementation</h2>
+                <p>The robot uses Python for its core functionality, with OpenCV handling image processing tasks. The system can detect various track defects including:</p>
+                <ul>
+                    <li>Surface cracks</li>
+                    <li>Missing bolts</li>
+                    <li>Track misalignment</li>
+                    <li>Wear and tear</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Results and Impact</h2>
+                <p>The Rail Robot has demonstrated significant advantages over manual inspection methods:</p>
+                <ul>
+                    <li>Increased inspection accuracy</li>
+                    <li>Reduced inspection time</li>
+                    <li>Enhanced safety for maintenance workers</li>
+                    <li>Cost-effective solution for regular track monitoring</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for project detail page */
+        .project-detail {
+            padding: 120px 0 80px;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-subtitle {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-description {
+            line-height: 1.8;
+        }
+
+        .project-description p {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-meta {
+            background-color: var(--gray-light);
+            padding: 2rem;
+            border-radius: 20px;
+        }
+
+        .meta-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-item {
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .project-gallery {
+            margin-top: 3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="project-title">Project Name</h1>
+                <p class="project-subtitle">A brief tagline describing the project</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h2>Overview</h2>
+                    <p>
+                        Provide a detailed description of your project here. Explain what the project does,
+                        why you built it, and what problems it solves. This is your chance to tell the story
+                        behind your work and showcase your thought process.
+                    </p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Feature 1 with detailed explanation</li>
+                        <li>Feature 2 with detailed explanation</li>
+                        <li>Feature 3 with detailed explanation</li>
+                        <li>Feature 4 with detailed explanation</li>
+                    </ul>
+
+                    <h2>Development Process</h2>
+                    <p>
+                        Explain your development process, including any challenges you faced and how you
+                        overcame them. Discuss the technical decisions you made and why you made them.
+                    </p>
+
+                    <h2>Results & Impact</h2>
+                    <p>
+                        Share the outcomes of your project. This could include metrics, user feedback,
+                        or any other measurable results that demonstrate the project's success.
+                    </p>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h3>Project Type</h3>
+                        <p>Web Application</p>
+                    </div>
+
+                    <div class="meta-item">
+                        <h3>Timeline</h3>
+                        <p>3 months (Jan 2024 - Mar 2024)</p>
+                    </div>
+
+                    <div class="meta-item">
+                        <h3>Role</h3>
+                        <p>Full Stack Developer</p>
+                    </div>
+
+                    <div class="meta-item">
+                        <h3>Technologies Used</h3>
+                        <div class="tech-stack">
+                            <span class="tech-item">React.js</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">Express</span>
+                            <span class="tech-item">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="meta-item">
+                        <h3>Links</h3>
+                        <p>
+                            <a href="#" target="_blank" class="project-link">Live Demo</a><br>
+                            <a href="#" target="_blank" class="project-link">GitHub Repository</a><br>
+                            <a href="../docs/project1-doc.pdf" target="_blank" class="project-link">Documentation</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-gallery">
+                <h2>Project Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../assets/project1-1.jpg" alt="Project Screenshot 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/project1-2.jpg" alt="Project Screenshot 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/project1-3.jpg" alt="Project Screenshot 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Friend's Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
